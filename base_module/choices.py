@@ -1,4 +1,6 @@
-from edc_constants.constants import NOT_APPLICABLE, OPEN, CLOSED
+NOT_APPLICABLE = 'N/A'
+OPEN = 'open'
+CLOSED = 'closed'
 
 DATE_ESTIMATED_NA = (
     (NOT_APPLICABLE, 'Not applicable'),

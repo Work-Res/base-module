@@ -1,8 +1,7 @@
 from django.db.models.fields import CharField
-from django.utils.translation import ugettext as _
-from edc_constants.constants import NOT_APPLICABLE
+from django.utils.translation import gettext_lazy as _
 
-from ..choices import DATE_ESTIMATED, DATE_ESTIMATED_NA
+from ..choices import DATE_ESTIMATED, DATE_ESTIMATED_NA, NOT_APPLICABLE
 
 
 class IsDateEstimatedField(CharField):

@@ -1,10 +1,8 @@
-from edc_device.model_mixins import DeviceModelMixin
-
 from ..model_fields import UUIDAutoField
 from .base_model import BaseModel
 
 
-class BaseUuidModel(DeviceModelMixin, BaseModel):
+class BaseUuidModel(BaseModel):
 
     """Base model class for all models using an UUID and not
     an INT for the primary key.
