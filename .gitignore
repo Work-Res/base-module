@@ -165,3 +165,4 @@ base_module.egg-info
 .settings
 .project
 .pydevproject
+**/__pycache__
