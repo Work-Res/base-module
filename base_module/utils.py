@@ -11,7 +11,7 @@ from uuid import uuid4
 from django.conf import settings
 from django.utils.encoding import force_str
 
-from edc_base.exceptions import AgeValueError
+from base_module.exceptions import AgeValueError
 
 safe_allowed_chars = 'ABCDEFGHKMNPRTUVWXYZ2346789'
 
