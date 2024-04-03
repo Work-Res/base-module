@@ -1,6 +1,6 @@
 from django.db import models
 
-from work_residence_permit.choices import PERMIT_TYPE
+from ..choices import PERMIT_TYPE
 
 
 class PermitModelModelMixin(models.Model):

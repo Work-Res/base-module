@@ -10,7 +10,7 @@ from ..choices import IDENTITY_TYPE
 class OtherCharField(CharField):
     """field for "Other specify" options"""
 
-    description = _("Custom field for 'Other specify' form field")
+    description = _("Custom field for 'Other specify' forms field")
 
     DEFAULT_MAX_LENGTH = 35
 
@@ -178,7 +178,7 @@ class IdentityTypeField(CharField):
 
         ...
 
-        Use the value of identity_type to check the cleaned value of identity at the form level.
+        Use the value of identity_type to check the cleaned value of identity at the forms level.
 
     """
 

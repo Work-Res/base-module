@@ -1,9 +1,9 @@
 from django.db import models
 
-from work_residence_permit.choices import MARITAL_STATUS, GENDER_CHOICES
+from ..choices import MARITAL_STATUS, GENDER
 
 
-class PersonModelMixin(models.Model):
+class Person(models.Model):
 	first_name = models.CharField(max_length=190)
 	last_name = models.CharField(max_length=190)
 	middle_name = models.CharField(max_length=190, blank=True, null=True)
@@ -12,9 +12,10 @@ class PersonModelMixin(models.Model):
 	dob = models.DateField()
 	country_birth = models.CharField(max_length=190)
 	place_birth = models.CharField(max_length=190),
-	gender = models.CharField(max_length=6, choices=GENDER_CHOICES)
+	gender = models.CharField(max_length=6, choices=GENDER)
 	occupation = models.CharField(max_length=190)
 	qualification = models.CharField(max_length=190)
 
 	class Meta:
-		abstract = True
+		verbose_name = 'Personal Details'
+		verbose_name_plural = 'Personal Details'

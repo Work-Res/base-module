@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class PassportModelMixin(models.Model):
+class Passport(models.Model):
 	pass_no = models.CharField(max_length=15)
 	date_issued = models.DateField()
 	place_issued = models.CharField(max_length=190)
@@ -10,4 +10,4 @@ class PassportModelMixin(models.Model):
 	photo = models.ImageField(upload_to='residence/%Y/%m'),
 
 	class Meta:
-		abstract = True
+		verbose_name = 'Passport'

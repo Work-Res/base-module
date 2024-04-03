@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class AddressModelMixin(models.Model):
+class Address(models.Model):
 	country = models.CharField(max_length=190)
 	town = models.CharField(max_length=190)
 	street = models.TextField(blank=True)
@@ -10,4 +10,4 @@ class AddressModelMixin(models.Model):
 	post_office_location = models.CharField(max_length=190)
 
 	class Meta:
-		abstract = True
+		verbose_name = 'Address'
