@@ -3,6 +3,17 @@ NOT_APPLICABLE = 'N/A'
 OPEN = 'open'
 CLOSED = 'closed'
 
+APPLICATION_STATUS = (
+	('new', 'New permit'),
+	('renewal', 'Renewal permit'),
+)
+
+COMM_METHODS = (
+    ('email', 'E-mail'),
+    ('sms', 'SMS'),
+    ('postal', 'Post')
+)
+
 DATE_ESTIMATED_NA = (
     (NOT_APPLICABLE, 'Not applicable'),
     ('not_estimated', 'No.'),
@@ -18,6 +29,11 @@ DATE_ESTIMATED = (
     ('YMD', 'Yes, estimated Year, Month and Day'),
 )
 
+GENDER = (
+	('male', 'Male'),
+	('female', 'Female')
+)
+
 IDENTITY_TYPE = (
     ('OMANG', 'Omang'),
     ('DRIVERS', 'Driver\'s License'),
@@ -26,27 +42,30 @@ IDENTITY_TYPE = (
     ('OTHER', 'Other'),
 )
 
-
-REPORT_STATUS = (
-    (OPEN, 'Open. Some information is still pending.'),
-    (CLOSED, 'Closed. This report is complete'),
+MARITAL_STATUS = (
+	('single', 'Single'),
+	('married', 'Married'),
+	('widowed', 'Widowed'),
+	('separated', 'Separated'),
+	('divorced', 'Divorced')
 )
 
-
-APPLICATION_STATUS = (
-	('new', 'New permit'),
-	('renewal', 'Renewal permit'),
+PERMIT_TYPE = (
+	('work', 'Work'),
+	('residence', 'Residence')
 )
+
+POSTAL_PREFIX = (
+	('VB#', 'VB#'),
+	('private_bag', 'Private Bag'),
+	('p_o_box', 'P. O. Box')
+)
+
 
 PREFERRED_METHOD_COMM = (
 	('sms', 'SMS'),
 	('post', 'POST'),
 	('email', 'EMAIL')
-)
-
-YES_NO = (
-	('yes', 'Yes'),
-	('no', 'No')
 )
 
 REASONS_PERMIT = (
@@ -57,20 +76,12 @@ REASONS_PERMIT = (
 	('missionary', 'Missionary'),
 )
 
-GENDER = (
-	('male', 'Male'),
-	('female', 'Female')
+REPORT_STATUS = (
+    (OPEN, 'Open. Some information is still pending.'),
+    (CLOSED, 'Closed. This report is complete'),
 )
 
-PERMIT_TYPE = (
-	('work', 'Work'),
-	('residence', 'Residence')
-)
-
-MARITAL_STATUS = (
-	('single', 'Single'),
-	('married', 'Married'),
-	('widowed', 'Widowed'),
-	('separated', 'Separated'),
-	('divorced', 'Divorced')
+YES_NO = (
+	('yes', 'Yes'),
+	('no', 'No')
 )
