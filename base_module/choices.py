@@ -85,3 +85,9 @@ YES_NO = (
 	('yes', 'Yes'),
 	('no', 'No')
 )
+
+PERMIT_STATUS = (
+	('new', 'New'),
+	('renewal', 'Renewal'),
+)
+
