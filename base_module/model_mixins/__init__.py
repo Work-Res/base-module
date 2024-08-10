@@ -1,7 +1,5 @@
-from .child_model_mixin import ChildModelMixin
 from .commissioner_oath_model_mixin import CommissionerOathModelMixin
 from .declaration_model_mixin import DeclarationModelMixin
 from .nationality_model_mixin import NationalityModelMixin
 from .permit_model_mixin import PermitModelModelMixin
-from .spouse_model_mixin import SpouseModelMixin
 from .base_uuid_model import BaseUuidModel

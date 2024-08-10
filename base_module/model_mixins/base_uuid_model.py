@@ -3,7 +3,6 @@ from .base_model import BaseModel
 
 
 class BaseUuidModel(BaseModel):
-
     """Base model class for all models using an UUID and not
     an INT for the primary key.
     """
@@ -12,7 +11,8 @@ class BaseUuidModel(BaseModel):
         blank=True,
         editable=False,
         help_text="System auto field. UUID primary key.",
-        primary_key=True)
+        primary_key=True,
+    )
 
     class Meta(BaseModel.Meta):
         abstract = True
