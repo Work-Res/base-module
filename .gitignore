@@ -166,3 +166,4 @@ base_module.egg-info
 .project
 .pydevproject
 **/__pycache__
+.DS_Store

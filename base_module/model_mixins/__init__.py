@@ -1,5 +1,4 @@
+from .nationality_model_mixin import NationalityModelMixin
+from .base_uuid_model import BaseUuidModel
 from .commissioner_oath_model_mixin import CommissionerOathModelMixin
 from .declaration_model_mixin import DeclarationModelMixin
-from .nationality_model_mixin import NationalityModelMixin
-from .permit_model_mixin import PermitModelModelMixin
-from .base_uuid_model import BaseUuidModel
