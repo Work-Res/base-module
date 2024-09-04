@@ -1,11 +1,12 @@
-from tabnanny import verbose
 from django.db import models
-from app.models import ApplicationBaseModel
+
+from identifier import UniqueNonCitizenIdentifierFieldMixin
 
 from ..choices import GENDER, YES_NO
+from ..model_mixins import BaseUuidModel
 
 
-class Child(ApplicationBaseModel):
+class Child(UniqueNonCitizenIdentifierFieldMixin, BaseUuidModel):
 
     first_name = models.CharField(max_length=150)
 
