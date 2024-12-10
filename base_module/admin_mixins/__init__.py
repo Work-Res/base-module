@@ -1,1 +1,2 @@
 from .base_model_admin_mixin import BaseUrlModelAdminMixin
+from .model_admin_audit_fields_mixin import ModelAdminAuditFieldsMixin, audit_fieldset_tuple
