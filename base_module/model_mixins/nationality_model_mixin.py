@@ -7,6 +7,7 @@ class NationalityModelMixin(models.Model):
         max_length=190,
         blank=True,
         null=True,
+        verbose_name="Country of Birth",
     )
 
     place_birth = models.CharField(
@@ -27,11 +28,7 @@ class NationalityModelMixin(models.Model):
         max_length=190,
         blank=True,
         null=True,
-    )
-
-    previous_botswana_id_no = models.IntegerField(
-        blank=True,
-        max_length=9,
+        verbose_name="Previous Nationality",
     )
 
     class Meta:
