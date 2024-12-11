@@ -31,7 +31,6 @@ class NationalityModelMixin(models.Model):
     previous_botswana_id_no = models.IntegerField(
         null=True,
         blank=True,
-        max_length=9,
     )
 
     class Meta:
