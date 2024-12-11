@@ -13,6 +13,7 @@ class NationalityModelMixin(models.Model):
         max_length=190,
         blank=True,
         null=True,
+        verbose_name="Place of Birth",
     )
 
     present_nationality = models.CharField(
